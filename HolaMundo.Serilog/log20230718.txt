@@ -1,0 +1,602 @@
+2023-07-18 11:46:57.411 -06:00 [FTL] Mensaje Fatal
+2023-07-18 11:49:37.024 -06:00 [FTL] Mensaje Fatal
+2023-07-18 11:51:27.784 -06:00 [FTL] Mensaje Fatal
+2023-07-18 11:57:12.173 -06:00 [INF] Mensaje Information
+2023-07-18 11:57:12.219 -06:00 [WRN] Mensaje Warning
+2023-07-18 11:57:12.221 -06:00 [ERR] Mensaje Error
+2023-07-18 11:57:12.222 -06:00 [FTL] Mensaje Fatal
+2023-07-18 12:02:57.870 -06:00 [INF] Mensaje Information
+2023-07-18 12:02:57.908 -06:00 [WRN] Mensaje Warning
+2023-07-18 12:02:57.909 -06:00 [ERR] Mensaje Error
+2023-07-18 12:02:57.910 -06:00 [FTL] Mensaje Fatal
+2023-07-18 12:24:37.010 -06:00 [INF] Mensaje Information
+2023-07-18 12:24:37.063 -06:00 [WRN] Mensaje Warning
+2023-07-18 12:24:37.064 -06:00 [ERR] Mensaje Error
+2023-07-18 12:24:37.065 -06:00 [FTL] Mensaje Fatal
+2023-07-18 12:25:01.612 -06:00 [INF] Mensaje Information
+2023-07-18 12:25:01.650 -06:00 [WRN] Mensaje Warning
+2023-07-18 12:25:01.652 -06:00 [ERR] Mensaje Error
+2023-07-18 12:25:01.653 -06:00 [FTL] Mensaje Fatal
+2023-07-18 12:28:09.598 -06:00 [INF] Now listening on: https://localhost:7154
+2023-07-18 12:28:09.638 -06:00 [INF] Now listening on: http://localhost:5140
+2023-07-18 12:28:09.646 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-18 12:28:09.648 -06:00 [INF] Hosting environment: Development
+2023-07-18 12:28:09.649 -06:00 [INF] Content root path: C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\
+2023-07-18 12:28:10.307 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/index.html - -
+2023-07-18 12:28:10.626 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - -
+2023-07-18 12:28:10.631 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 327.0677ms
+2023-07-18 12:28:10.631 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 4.3055ms
+2023-07-18 12:28:10.679 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_vs/browserLink - -
+2023-07-18 12:28:10.699 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.1039ms
+2023-07-18 12:28:10.753 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - -
+2023-07-18 12:28:10.827 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 74.6074ms
+2023-07-18 12:28:14.359 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/WeatherForecast - -
+2023-07-18 12:28:14.365 -06:00 [INF] Executing endpoint 'HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog)'
+2023-07-18 12:28:14.379 -06:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[HolaMundo.Serilog.WeatherForecast] Get() on controller HolaMundo.Serilog.Controllers.WeatherForecastController (HolaMundo.Serilog).
+2023-07-18 12:28:14.383 -06:00 [INF] Executing WeatherForecast Get method
+2023-07-18 12:28:14.404 -06:00 [ERR] Error/exception in WeatherForecast Get method. Error Sample user created exception.
+System.Exception: Sample user created exception.
+ ---> System.Exception: Sample inner exception
+   --- End of inner exception stack trace ---
+   at HolaMundo.Serilog.Controllers.WeatherForecastController.Get() in C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\Controllers\WeatherForecastController.cs:line 27
+2023-07-18 12:28:17.178 -06:00 [INF] Executed action HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog) in 2792.6727ms
+2023-07-18 12:28:17.185 -06:00 [INF] Executed endpoint 'HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog)'
+2023-07-18 12:28:17.189 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Sample user created exception.
+ ---> System.Exception: Sample inner exception
+   --- End of inner exception stack trace ---
+   at HolaMundo.Serilog.Controllers.WeatherForecastController.Get() in C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\Controllers\WeatherForecastController.cs:line 27
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-18 12:28:17.217 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/WeatherForecast - - - 500 - text/plain;+charset=utf-8 2858.0703ms
+2023-07-18 12:35:54.726 -06:00 [INF] Now listening on: https://localhost:7154
+2023-07-18 12:35:54.761 -06:00 [INF] Now listening on: http://localhost:5140
+2023-07-18 12:35:54.768 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-18 12:35:54.769 -06:00 [INF] Hosting environment: Development
+2023-07-18 12:35:54.769 -06:00 [INF] Content root path: C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\
+2023-07-18 12:35:55.297 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/index.html - -
+2023-07-18 12:35:55.593 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - -
+2023-07-18 12:35:55.598 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 303.9454ms
+2023-07-18 12:35:55.598 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 4.8428ms
+2023-07-18 12:35:55.647 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_vs/browserLink - -
+2023-07-18 12:35:55.663 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 15.7809ms
+2023-07-18 12:35:55.720 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - -
+2023-07-18 12:35:55.798 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 77.9866ms
+2023-07-18 12:36:47.291 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/WeatherForecast - -
+2023-07-18 12:36:47.302 -06:00 [INF] Executing endpoint 'HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog)'
+2023-07-18 12:36:47.317 -06:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[HolaMundo.Serilog.WeatherForecast] Get() on controller HolaMundo.Serilog.Controllers.WeatherForecastController (HolaMundo.Serilog).
+2023-07-18 12:36:47.320 -06:00 [INF] Executing WeatherForecast Get method
+2023-07-18 12:36:47.342 -06:00 [ERR] Error/exception in WeatherForecast Get method. Error Sample user created exception.
+System.Exception: Sample user created exception.
+ ---> System.Exception: Sample inner exception
+   --- End of inner exception stack trace ---
+   at HolaMundo.Serilog.Controllers.WeatherForecastController.Get() in C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\Controllers\WeatherForecastController.cs:line 27
+2023-07-18 12:36:49.550 -06:00 [INF] Executed action HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog) in 2227.663ms
+2023-07-18 12:36:49.555 -06:00 [INF] Executed endpoint 'HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog)'
+2023-07-18 12:36:49.560 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Sample user created exception.
+ ---> System.Exception: Sample inner exception
+   --- End of inner exception stack trace ---
+   at HolaMundo.Serilog.Controllers.WeatherForecastController.Get() in C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\Controllers\WeatherForecastController.cs:line 27
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-18 12:36:49.585 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/WeatherForecast - - - 500 - text/plain;+charset=utf-8 2293.9161ms
+2023-07-18 12:44:17.598 -06:00 [INF] Now listening on: https://localhost:7154
+2023-07-18 12:44:17.633 -06:00 [INF] Now listening on: http://localhost:5140
+2023-07-18 12:44:17.641 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-18 12:44:17.642 -06:00 [INF] Hosting environment: Development
+2023-07-18 12:44:17.642 -06:00 [INF] Content root path: C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\
+2023-07-18 12:44:18.292 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/index.html - -
+2023-07-18 12:44:18.588 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - -
+2023-07-18 12:44:18.590 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 300.0828ms
+2023-07-18 12:44:18.596 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 7.4526ms
+2023-07-18 12:44:18.639 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_vs/browserLink - -
+2023-07-18 12:44:18.654 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 15.1371ms
+2023-07-18 12:44:18.711 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - -
+2023-07-18 12:44:18.784 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 73.0831ms
+2023-07-18 12:44:21.547 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/WeatherForecast - -
+2023-07-18 12:44:21.553 -06:00 [INF] Executing endpoint 'HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog)'
+2023-07-18 12:44:21.567 -06:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[HolaMundo.Serilog.WeatherForecast] Get() on controller HolaMundo.Serilog.Controllers.WeatherForecastController (HolaMundo.Serilog).
+2023-07-18 12:44:21.570 -06:00 [INF] Executing WeatherForecast Get method
+2023-07-18 12:44:21.592 -06:00 [ERR] Error/exception in WeatherForecast Get method. Error Sample user created exception.
+System.Exception: Sample user created exception.
+ ---> System.Exception: Sample inner exception
+   --- End of inner exception stack trace ---
+   at HolaMundo.Serilog.Controllers.WeatherForecastController.Get() in C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\Controllers\WeatherForecastController.cs:line 27
+2023-07-18 12:44:23.582 -06:00 [INF] Executed action HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog) in 2009.2026ms
+2023-07-18 12:44:23.588 -06:00 [INF] Executed endpoint 'HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog)'
+2023-07-18 12:44:23.593 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Sample user created exception.
+ ---> System.Exception: Sample inner exception
+   --- End of inner exception stack trace ---
+   at HolaMundo.Serilog.Controllers.WeatherForecastController.Get() in C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\Controllers\WeatherForecastController.cs:line 27
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-18 12:44:23.618 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/WeatherForecast - - - 500 - text/plain;+charset=utf-8 2070.3774ms
+2023-07-18 12:45:04.812 -06:00 [INF] Now listening on: https://localhost:7154
+2023-07-18 12:45:04.845 -06:00 [INF] Now listening on: http://localhost:5140
+2023-07-18 12:45:04.851 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-18 12:45:04.852 -06:00 [INF] Hosting environment: Development
+2023-07-18 12:45:04.853 -06:00 [INF] Content root path: C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\
+2023-07-18 12:45:05.444 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/index.html - -
+2023-07-18 12:45:05.741 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - -
+2023-07-18 12:45:05.745 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 304.3536ms
+2023-07-18 12:45:05.746 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 4.8486ms
+2023-07-18 12:45:05.795 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_vs/browserLink - -
+2023-07-18 12:45:05.814 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.9920ms
+2023-07-18 12:45:05.870 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - -
+2023-07-18 12:45:05.943 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 72.8987ms
+2023-07-18 12:46:53.681 -06:00 [INF] Now listening on: https://localhost:7154
+2023-07-18 12:46:53.715 -06:00 [INF] Now listening on: http://localhost:5140
+2023-07-18 12:46:53.721 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-18 12:46:53.722 -06:00 [INF] Hosting environment: Development
+2023-07-18 12:46:53.723 -06:00 [INF] Content root path: C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\
+2023-07-18 12:46:54.235 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/index.html - -
+2023-07-18 12:46:54.529 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - -
+2023-07-18 12:46:54.533 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 301.3888ms
+2023-07-18 12:46:54.534 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 4.1412ms
+2023-07-18 12:46:54.582 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_vs/browserLink - -
+2023-07-18 12:46:54.599 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.8128ms
+2023-07-18 12:46:54.653 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - -
+2023-07-18 12:46:54.729 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 75.5439ms
+2023-07-18 12:47:51.353 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/WeatherForecast - -
+2023-07-18 12:47:51.359 -06:00 [INF] Executing endpoint 'HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog)'
+2023-07-18 12:47:51.375 -06:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[HolaMundo.Serilog.WeatherForecast] Get() on controller HolaMundo.Serilog.Controllers.WeatherForecastController (HolaMundo.Serilog).
+2023-07-18 12:47:51.379 -06:00 [INF] Executing WeatherForecast Get method
+2023-07-18 12:47:51.400 -06:00 [ERR] Error/exception in WeatherForecast Get method. Error Sample user created exception.
+System.Exception: Sample user created exception.
+ ---> System.Exception: Sample inner exception
+   --- End of inner exception stack trace ---
+   at HolaMundo.Serilog.Controllers.WeatherForecastController.Get() in C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\Controllers\WeatherForecastController.cs:line 27
+2023-07-18 12:47:54.789 -06:00 [INF] Executed action HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog) in 3407.9813ms
+2023-07-18 12:47:54.795 -06:00 [INF] Executed endpoint 'HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog)'
+2023-07-18 12:47:54.799 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Sample user created exception.
+ ---> System.Exception: Sample inner exception
+   --- End of inner exception stack trace ---
+   at HolaMundo.Serilog.Controllers.WeatherForecastController.Get() in C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\Controllers\WeatherForecastController.cs:line 27
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-18 12:47:54.829 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/WeatherForecast - - - 500 - text/plain;+charset=utf-8 3476.0135ms
+2023-07-18 12:48:36.058 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/index.html - -
+2023-07-18 12:48:36.074 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 17.4525ms
+2023-07-18 12:48:36.101 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_vs/browserLink - -
+2023-07-18 12:48:36.101 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - -
+2023-07-18 12:48:36.105 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 4.1793ms
+2023-07-18 12:48:36.107 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 6.9336ms
+2023-07-18 12:48:36.171 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - -
+2023-07-18 12:48:36.174 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.2173ms
+2023-07-18 12:48:36.178 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/favicon-32x32.png - -
+2023-07-18 12:48:36.190 -06:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-07-18 12:48:36.191 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/favicon-32x32.png - - - 200 628 image/png 12.6788ms
+2023-07-18 12:52:06.606 -06:00 [INF] Now listening on: https://localhost:7154
+2023-07-18 12:52:06.642 -06:00 [INF] Now listening on: http://localhost:5140
+2023-07-18 12:52:06.649 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-18 12:52:06.650 -06:00 [INF] Hosting environment: Development
+2023-07-18 12:52:06.650 -06:00 [INF] Content root path: C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\
+2023-07-18 12:52:07.253 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/index.html - -
+2023-07-18 12:52:07.547 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - -
+2023-07-18 12:52:07.552 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 301.7453ms
+2023-07-18 12:52:07.552 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 4.2937ms
+2023-07-18 12:52:07.601 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_vs/browserLink - -
+2023-07-18 12:52:07.618 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.4613ms
+2023-07-18 12:52:07.673 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - -
+2023-07-18 12:52:07.750 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 77.4751ms
+2023-07-18 12:52:58.180 -06:00 [INF] Now listening on: https://localhost:7154
+2023-07-18 12:52:58.214 -06:00 [INF] Now listening on: http://localhost:5140
+2023-07-18 12:52:58.220 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-18 12:52:58.221 -06:00 [INF] Hosting environment: Development
+2023-07-18 12:52:58.222 -06:00 [INF] Content root path: C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\
+2023-07-18 12:52:58.683 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/index.html - -
+2023-07-18 12:52:58.977 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - -
+2023-07-18 12:52:58.980 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 299.4713ms
+2023-07-18 12:52:58.981 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 4.0137ms
+2023-07-18 12:52:59.031 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_vs/browserLink - -
+2023-07-18 12:52:59.049 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.3123ms
+2023-07-18 12:52:59.104 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - -
+2023-07-18 12:52:59.180 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 76.5177ms
+2023-07-18 12:53:08.251 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/WeatherForecast - -
+2023-07-18 12:53:08.257 -06:00 [INF] Executing endpoint 'HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog)'
+2023-07-18 12:53:08.272 -06:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[HolaMundo.Serilog.WeatherForecast] Get() on controller HolaMundo.Serilog.Controllers.WeatherForecastController (HolaMundo.Serilog).
+2023-07-18 12:53:08.275 -06:00 [INF] Executing WeatherForecast Get method
+2023-07-18 12:53:08.297 -06:00 [ERR] Error/exception in WeatherForecast Get method. Error Sample user created exception.
+System.Exception: Sample user created exception.
+ ---> System.Exception: Sample inner exception
+   --- End of inner exception stack trace ---
+   at HolaMundo.Serilog.Controllers.WeatherForecastController.Get() in C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\Controllers\WeatherForecastController.cs:line 27
+2023-07-18 12:53:10.089 -06:00 [INF] Executed action HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog) in 1811.7766ms
+2023-07-18 12:53:10.095 -06:00 [INF] Executed endpoint 'HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog)'
+2023-07-18 12:53:10.100 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Sample user created exception.
+ ---> System.Exception: Sample inner exception
+   --- End of inner exception stack trace ---
+   at HolaMundo.Serilog.Controllers.WeatherForecastController.Get() in C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\Controllers\WeatherForecastController.cs:line 27
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-18 12:53:10.125 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/WeatherForecast - - - 500 - text/plain;+charset=utf-8 1874.2683ms
+2023-07-18 12:54:24.181 -06:00 [INF] Now listening on: https://localhost:7154
+2023-07-18 12:54:24.215 -06:00 [INF] Now listening on: http://localhost:5140
+2023-07-18 12:54:24.223 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-18 12:54:24.224 -06:00 [INF] Hosting environment: Development
+2023-07-18 12:54:24.224 -06:00 [INF] Content root path: C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\
+2023-07-18 12:54:24.726 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/index.html - -
+2023-07-18 12:54:25.019 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - -
+2023-07-18 12:54:25.024 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 4.5838ms
+2023-07-18 12:54:25.024 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 301.3977ms
+2023-07-18 12:54:25.071 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_vs/browserLink - -
+2023-07-18 12:54:25.087 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.0783ms
+2023-07-18 12:54:25.143 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - -
+2023-07-18 12:54:25.216 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 72.7288ms
+2023-07-18 12:55:02.580 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/WeatherForecast - -
+2023-07-18 12:55:02.589 -06:00 [INF] Executing endpoint 'HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog)'
+2023-07-18 12:55:02.603 -06:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[HolaMundo.Serilog.WeatherForecast] Get() on controller HolaMundo.Serilog.Controllers.WeatherForecastController (HolaMundo.Serilog).
+2023-07-18 12:55:02.606 -06:00 [INF] Executing WeatherForecast Get method
+2023-07-18 12:55:02.627 -06:00 [ERR] Error/exception in WeatherForecast Get method. Error Sample user created exception.
+System.Exception: Sample user created exception.
+ ---> System.Exception: Sample inner exception
+   --- End of inner exception stack trace ---
+   at HolaMundo.Serilog.Controllers.WeatherForecastController.Get() in C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\Controllers\WeatherForecastController.cs:line 27
+2023-07-18 12:55:04.968 -06:00 [INF] Executed action HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog) in 2359.4353ms
+2023-07-18 12:55:04.975 -06:00 [INF] Executed endpoint 'HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog)'
+2023-07-18 12:55:04.979 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Sample user created exception.
+ ---> System.Exception: Sample inner exception
+   --- End of inner exception stack trace ---
+   at HolaMundo.Serilog.Controllers.WeatherForecastController.Get() in C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\Controllers\WeatherForecastController.cs:line 27
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-18 12:55:05.010 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/WeatherForecast - - - 500 - text/plain;+charset=utf-8 2429.4245ms
+2023-07-18 12:55:06.754 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/WeatherForecast - -
+2023-07-18 12:55:06.756 -06:00 [INF] Executing endpoint 'HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog)'
+2023-07-18 12:55:06.757 -06:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[HolaMundo.Serilog.WeatherForecast] Get() on controller HolaMundo.Serilog.Controllers.WeatherForecastController (HolaMundo.Serilog).
+2023-07-18 12:55:06.759 -06:00 [INF] Executing WeatherForecast Get method
+2023-07-18 12:55:06.771 -06:00 [ERR] Error/exception in WeatherForecast Get method. Error Sample user created exception.
+System.Exception: Sample user created exception.
+ ---> System.Exception: Sample inner exception
+   --- End of inner exception stack trace ---
+   at HolaMundo.Serilog.Controllers.WeatherForecastController.Get() in C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\Controllers\WeatherForecastController.cs:line 27
+2023-07-18 12:55:25.723 -06:00 [INF] Executed action HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog) in 18963.7526ms
+2023-07-18 12:55:25.725 -06:00 [INF] Executed endpoint 'HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog)'
+2023-07-18 12:55:25.726 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Sample user created exception.
+ ---> System.Exception: Sample inner exception
+   --- End of inner exception stack trace ---
+   at HolaMundo.Serilog.Controllers.WeatherForecastController.Get()
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-18 12:55:25.741 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/WeatherForecast - - - 500 - text/plain;+charset=utf-8 18986.2814ms
+2023-07-18 12:55:26.727 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/index.html - -
+2023-07-18 12:55:26.744 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 16.7371ms
+2023-07-18 12:55:26.779 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - -
+2023-07-18 12:55:26.780 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_vs/browserLink - -
+2023-07-18 12:55:26.781 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 1.7168ms
+2023-07-18 12:55:26.790 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 10.8285ms
+2023-07-18 12:55:26.854 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - -
+2023-07-18 12:55:26.856 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.1528ms
+2023-07-18 12:55:31.159 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/WeatherForecast - -
+2023-07-18 12:55:31.160 -06:00 [INF] Executing endpoint 'HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog)'
+2023-07-18 12:55:31.163 -06:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[HolaMundo.Serilog.WeatherForecast] Get() on controller HolaMundo.Serilog.Controllers.WeatherForecastController (HolaMundo.Serilog).
+2023-07-18 12:55:31.166 -06:00 [INF] Executing WeatherForecast Get method
+2023-07-18 12:55:31.175 -06:00 [INF] Executing ObjectResult, writing value of type 'HolaMundo.Serilog.WeatherForecast[]'.
+2023-07-18 12:55:31.190 -06:00 [INF] Executed action HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog) in 24.8686ms
+2023-07-18 12:55:31.192 -06:00 [INF] Executed endpoint 'HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog)'
+2023-07-18 12:55:31.193 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/WeatherForecast - - - 200 - application/json;+charset=utf-8 34.0293ms
+2023-07-18 12:55:31.850 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/WeatherForecast - -
+2023-07-18 12:55:31.851 -06:00 [INF] Executing endpoint 'HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog)'
+2023-07-18 12:55:31.853 -06:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[HolaMundo.Serilog.WeatherForecast] Get() on controller HolaMundo.Serilog.Controllers.WeatherForecastController (HolaMundo.Serilog).
+2023-07-18 12:55:31.855 -06:00 [INF] Executing WeatherForecast Get method
+2023-07-18 12:55:31.856 -06:00 [INF] Executing ObjectResult, writing value of type 'HolaMundo.Serilog.WeatherForecast[]'.
+2023-07-18 12:55:31.857 -06:00 [INF] Executed action HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog) in 1.7289ms
+2023-07-18 12:55:31.858 -06:00 [INF] Executed endpoint 'HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog)'
+2023-07-18 12:55:31.859 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/WeatherForecast - - - 200 - application/json;+charset=utf-8 9.0234ms
+2023-07-18 12:58:22.949 -06:00 [INF] Now listening on: https://localhost:7154
+2023-07-18 12:58:22.983 -06:00 [INF] Now listening on: http://localhost:5140
+2023-07-18 12:58:22.990 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-18 12:58:22.991 -06:00 [INF] Hosting environment: Development
+2023-07-18 12:58:22.991 -06:00 [INF] Content root path: C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\
+2023-07-18 12:58:23.423 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/index.html - -
+2023-07-18 12:58:23.724 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - -
+2023-07-18 12:58:23.728 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 307.7737ms
+2023-07-18 12:58:23.735 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 10.7554ms
+2023-07-18 12:58:23.784 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_vs/browserLink - -
+2023-07-18 12:58:23.801 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.3422ms
+2023-07-18 12:58:23.858 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - -
+2023-07-18 12:58:23.933 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 75.2728ms
+2023-07-18 13:00:19.191 -06:00 [ERR] Error/exception in WeatherForecast Get method. Error Sample user created exception.
+System.Exception: Sample user created exception.
+ ---> System.Exception: Sample inner exception
+   --- End of inner exception stack trace ---
+   at HolaMundo.Serilog.Controllers.WeatherForecastController.Get()
+2023-07-18 13:00:20.883 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Sample user created exception.
+ ---> System.Exception: Sample inner exception
+   --- End of inner exception stack trace ---
+   at HolaMundo.Serilog.Controllers.WeatherForecastController.Get()
+   at lambda_method4(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-18 13:02:05.595 -06:00 [INF] Now listening on: https://localhost:7154
+2023-07-18 13:02:05.636 -06:00 [INF] Now listening on: http://localhost:5140
+2023-07-18 13:02:05.645 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-18 13:02:05.646 -06:00 [INF] Hosting environment: Development
+2023-07-18 13:02:05.647 -06:00 [INF] Content root path: C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\
+2023-07-18 13:02:06.255 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/index.html - -
+2023-07-18 13:02:06.574 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - -
+2023-07-18 13:02:06.578 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 325.8670ms
+2023-07-18 13:02:06.578 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 4.8992ms
+2023-07-18 13:02:06.631 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_vs/browserLink - -
+2023-07-18 13:02:06.647 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 15.8298ms
+2023-07-18 13:02:06.710 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - -
+2023-07-18 13:02:06.785 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 75.1986ms
+2023-07-18 13:02:41.157 -06:00 [INF] Application is shutting down...
+2023-07-18 13:41:18.761 -06:00 [INF] Now listening on: https://localhost:7154
+2023-07-18 13:41:18.803 -06:00 [INF] Now listening on: http://localhost:5140
+2023-07-18 13:41:18.808 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-18 13:41:18.810 -06:00 [INF] Hosting environment: Development
+2023-07-18 13:41:18.811 -06:00 [INF] Content root path: C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\
+2023-07-18 13:41:19.218 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/index.html - -
+2023-07-18 13:41:19.522 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - -
+2023-07-18 13:41:19.526 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 309.9929ms
+2023-07-18 13:41:19.530 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 5.1969ms
+2023-07-18 13:41:19.577 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_vs/browserLink - -
+2023-07-18 13:41:19.597 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.2190ms
+2023-07-18 13:41:19.653 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - -
+2023-07-18 13:41:19.731 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 77.2310ms
+2023-07-18 13:41:24.034 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/WeatherForecast - -
+2023-07-18 13:41:24.041 -06:00 [INF] Executing endpoint 'HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog)'
+2023-07-18 13:41:24.058 -06:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[HolaMundo.Serilog.WeatherForecast] Get() on controller HolaMundo.Serilog.Controllers.WeatherForecastController (HolaMundo.Serilog).
+2023-07-18 13:41:24.061 -06:00 [INF] Executing WeatherForecast Get method
+2023-07-18 13:41:24.085 -06:00 [ERR] Error/exception in WeatherForecast Get method. Error Sample user created exception.
+System.Exception: Sample user created exception.
+ ---> System.Exception: Sample inner exception
+   --- End of inner exception stack trace ---
+   at HolaMundo.Serilog.Controllers.WeatherForecastController.Get() in C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\Controllers\WeatherForecastController.cs:line 27
+2023-07-18 13:41:26.071 -06:00 [INF] Executed action HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog) in 2007.2165ms
+2023-07-18 13:41:26.076 -06:00 [INF] Executed endpoint 'HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog)'
+2023-07-18 13:41:26.084 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Sample user created exception.
+ ---> System.Exception: Sample inner exception
+   --- End of inner exception stack trace ---
+   at HolaMundo.Serilog.Controllers.WeatherForecastController.Get() in C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\Controllers\WeatherForecastController.cs:line 27
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-18 13:41:26.099 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/WeatherForecast - - - 500 - text/plain;+charset=utf-8 2065.4706ms
+2023-07-18 13:43:27.537 -06:00 [INF] Now listening on: https://localhost:7154
+2023-07-18 13:43:27.575 -06:00 [INF] Now listening on: http://localhost:5140
+2023-07-18 13:43:27.579 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-18 13:43:27.581 -06:00 [INF] Hosting environment: Development
+2023-07-18 13:43:27.581 -06:00 [INF] Content root path: C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\
+2023-07-18 13:43:28.057 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/index.html - -
+2023-07-18 13:43:28.370 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - -
+2023-07-18 13:43:28.375 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 4.3472ms
+2023-07-18 13:43:28.375 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 321.4428ms
+2023-07-18 13:43:28.426 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_vs/browserLink - -
+2023-07-18 13:43:28.444 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.4828ms
+2023-07-18 13:43:28.503 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - -
+2023-07-18 13:43:28.579 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 76.3496ms
+2023-07-18 13:43:38.922 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/WeatherForecast - -
+2023-07-18 13:43:38.929 -06:00 [INF] Executing endpoint 'HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog)'
+2023-07-18 13:43:38.944 -06:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[HolaMundo.Serilog.WeatherForecast] Get() on controller HolaMundo.Serilog.Controllers.WeatherForecastController (HolaMundo.Serilog).
+2023-07-18 13:43:38.947 -06:00 [INF] Executing WeatherForecast Get method
+2023-07-18 13:43:38.971 -06:00 [ERR] Error/exception in WeatherForecast Get method. Error Sample user created exception.
+System.Exception: Sample user created exception.
+ ---> System.Exception: Sample inner exception
+   --- End of inner exception stack trace ---
+   at HolaMundo.Serilog.Controllers.WeatherForecastController.Get() in C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\Controllers\WeatherForecastController.cs:line 27
+2023-07-18 13:43:41.097 -06:00 [INF] Executed action HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog) in 2146.4457ms
+2023-07-18 13:43:41.101 -06:00 [INF] Executed endpoint 'HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog)'
+2023-07-18 13:43:41.106 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Sample user created exception.
+ ---> System.Exception: Sample inner exception
+   --- End of inner exception stack trace ---
+   at HolaMundo.Serilog.Controllers.WeatherForecastController.Get() in C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\Controllers\WeatherForecastController.cs:line 27
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-18 13:43:41.129 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/WeatherForecast - - - 500 - text/plain;+charset=utf-8 2207.2310ms
+2023-07-18 13:44:22.742 -06:00 [INF] Now listening on: https://localhost:7154
+2023-07-18 13:44:22.778 -06:00 [INF] Now listening on: http://localhost:5140
+2023-07-18 13:44:22.783 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-18 13:44:22.784 -06:00 [INF] Hosting environment: Development
+2023-07-18 13:44:22.785 -06:00 [INF] Content root path: C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\
+2023-07-18 13:44:23.552 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/index.html - -
+2023-07-18 13:44:23.842 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - -
+2023-07-18 13:44:23.847 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - - - 200 12004 application/javascript;+charset=utf-8 4.2352ms
+2023-07-18 13:44:23.847 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/index.html - - - 200 - text/html;charset=utf-8 298.4196ms
+2023-07-18 13:44:23.895 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_vs/browserLink - -
+2023-07-18 13:44:23.913 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.4078ms
+2023-07-18 13:44:23.972 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - -
+2023-07-18 13:44:24.047 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 75.4245ms
+2023-07-18 13:45:15.459 -06:00 [INF] Request starting HTTP/2 GET https://localhost:7154/WeatherForecast - -
+2023-07-18 13:45:15.465 -06:00 [INF] Executing endpoint 'HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog)'
+2023-07-18 13:45:15.481 -06:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[HolaMundo.Serilog.WeatherForecast] Get() on controller HolaMundo.Serilog.Controllers.WeatherForecastController (HolaMundo.Serilog).
+2023-07-18 13:45:15.484 -06:00 [INF] Executing WeatherForecast Get method
+2023-07-18 13:45:15.507 -06:00 [ERR] Error/exception in WeatherForecast Get method. Error Sample user created exception.
+System.Exception: Sample user created exception.
+ ---> System.Exception: Sample inner exception
+   --- End of inner exception stack trace ---
+   at HolaMundo.Serilog.Controllers.WeatherForecastController.Get() in C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\Controllers\WeatherForecastController.cs:line 27
+2023-07-18 13:45:17.560 -06:00 [INF] Executed action HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog) in 2070.2872ms
+2023-07-18 13:45:17.566 -06:00 [INF] Executed endpoint 'HolaMundo.Serilog.Controllers.WeatherForecastController.Get (HolaMundo.Serilog)'
+2023-07-18 13:45:17.571 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Sample user created exception.
+ ---> System.Exception: Sample inner exception
+   --- End of inner exception stack trace ---
+   at HolaMundo.Serilog.Controllers.WeatherForecastController.Get() in C:\Users\vmartinez\source\repos\vmartinez1984\HolaMundo\HolaMundo.Serilog\Controllers\WeatherForecastController.cs:line 27
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-07-18 13:45:17.584 -06:00 [INF] Request finished HTTP/2 GET https://localhost:7154/WeatherForecast - - - 500 - text/plain;+charset=utf-8 2125.5686ms

@@ -1,0 +1,24 @@
+﻿@model HolaMundo.MinioS3.Models.UploadModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+La instrucción en docker:
+<br/>
+docker run -p 9000:9000 -p 9001:9001  -e "MINIO_ROOT_USER=minio" -e "MINIO_ROOT_PASSWORD=12345678" minio/minio server /data --console-address ":9001"
+<br/>
+
+<div class="text-center">
+   <form asp-controller="Home" asp-action="Upload" enctype="multipart/form-data">
+       <dl>
+           <dt>
+               <label>Archivo</label>
+           </dt>
+           <dd>
+               <input asp-for="FormFile" type="file"/>
+           </dd>
+       </dl>
+       <input type="submit" value="Upload" />
+   </form>
+</div>
