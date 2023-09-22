@@ -1,7 +1,10 @@
 ﻿using HolaMundo.MinioS3.Models;
 using Microsoft.AspNetCore.Mvc;
 using Minio;
+using Minio.DataModel;
+using System;
 using System.Diagnostics;
+using System.Security.AccessControl;
 
 namespace HolaMundo.MinioS3.Controllers
 {
@@ -37,8 +40,8 @@ namespace HolaMundo.MinioS3.Controllers
                     .WithCredentials(accessKey, secretKey)
                     .WithSSL(false)
                     .Build();
-            var objectName = upload.FormFile.FileName;            
-            var contentType = "application/octet-stream";           
+            var objectName = upload.FormFile.FileName;
+            var contentType = "application/octet-stream";
 
             var beArgs = new BucketExistsArgs()
                 .WithBucket(bucketName);
@@ -54,13 +57,49 @@ namespace HolaMundo.MinioS3.Controllers
                 new PutObjectArgs()
                 .WithBucket(bucketName)
                 .WithObject(objectName)
-                .WithStreamData(upload.FormFile.OpenReadStream())  
+                .WithStreamData(upload.FormFile.OpenReadStream())
                 .WithObjectSize(upload.FormFile.Length)
                 .WithContentType(contentType)
-            );          
+            );
 
             return RedirectToAction("Index");
         }
+
+        //https://localhost:7072/home/ver?etag=16a9ff563960a46325cb70a96f2fc057
+        public async Task<IActionResult> ver(string etag)
+        {
+            var minio = new MinioClient()
+                    .WithEndpoint(url)
+                    .WithCredentials(accessKey, secretKey)
+                    .WithSSL(false)
+                    .Build();
+
+            var objstatreply = await minio.StatObjectAsync(new StatObjectArgs()
+                .WithBucket(bucketName)
+                .WithObject("BentoDragon.jpeg")
+            //.WithMatchETag(etag)
+            );
+
+            if (objstatreply == null || objstatreply.DeleteMarker)
+                throw new Exception("object not found or Deleted");
+            using (var memoryStream = new MemoryStream())
+            {
+                var data =
+                await minio.GetObjectAsync(new GetObjectArgs()
+                    .WithBucket(bucketName)                    
+                    .WithObject("BentoDragon.jpeg")
+                    .WithCallbackStream((stream) =>
+                    {
+                        stream.CopyTo(memoryStream);
+                    })
+                );
+
+                return File(memoryStream.ToArray(), "image/png");
+                //return File(memoryStream.ToArray(), "image/png", fileDownloadName: data.ObjectName);
+            }
+
+        }
+
 
         public IActionResult Privacy()
         {
