@@ -61,7 +61,9 @@ namespace HolaMundo.MinioS3.Controllers
                 .WithObjectSize(upload.FormFile.Length)
                 .WithContentType(contentType)
             );
-
+            Console.WriteLine(response);
+            //objectName
+            //etag
             return RedirectToAction("Index");
         }
 
@@ -87,7 +89,7 @@ namespace HolaMundo.MinioS3.Controllers
                 var data =
                 await minio.GetObjectAsync(new GetObjectArgs()
                     .WithBucket(bucketName)                    
-                    .WithObject("BentoDragon.jpeg")
+                    //.WithObject("BentoDragon.jpeg")                    
                     .WithCallbackStream((stream) =>
                     {
                         stream.CopyTo(memoryStream);

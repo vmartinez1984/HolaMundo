@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorldParaDocker.Mvc", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HolaMundo.Serilog", "HolaMundo.Serilog\HolaMundo.Serilog.csproj", "{C2E477FA-3AF6-45B2-B041-C797EEEFD836}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolaMundo.MinioS3", "HolaMundo.MinioS3\HolaMundo.MinioS3.csproj", "{EFC1954B-4C4D-4AAA-BC17-9AFB4CC968EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HolaMundo.MinioS3", "HolaMundo.MinioS3\HolaMundo.MinioS3.csproj", "{EFC1954B-4C4D-4AAA-BC17-9AFB4CC968EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolaMundo.FirebaseStorage", "HolaMundo.FirebaseStorage\HolaMundo.FirebaseStorage.csproj", "{E1EB2120-D09F-4A1F-A49A-35821A8CF813}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{EFC1954B-4C4D-4AAA-BC17-9AFB4CC968EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFC1954B-4C4D-4AAA-BC17-9AFB4CC968EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFC1954B-4C4D-4AAA-BC17-9AFB4CC968EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1EB2120-D09F-4A1F-A49A-35821A8CF813}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1EB2120-D09F-4A1F-A49A-35821A8CF813}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1EB2120-D09F-4A1F-A49A-35821A8CF813}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1EB2120-D09F-4A1F-A49A-35821A8CF813}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
