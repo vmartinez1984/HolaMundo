@@ -17,7 +17,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HolaMundo.Serilog", "HolaMu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HolaMundo.MinioS3", "HolaMundo.MinioS3\HolaMundo.MinioS3.csproj", "{EFC1954B-4C4D-4AAA-BC17-9AFB4CC968EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolaMundo.FirebaseStorage", "HolaMundo.FirebaseStorage\HolaMundo.FirebaseStorage.csproj", "{E1EB2120-D09F-4A1F-A49A-35821A8CF813}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HolaMundo.FirebaseStorage", "HolaMundo.FirebaseStorage\HolaMundo.FirebaseStorage.csproj", "{E1EB2120-D09F-4A1F-A49A-35821A8CF813}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolaMundo.Wcf", "HolaMundo.Wcf\HolaMundo.Wcf.csproj", "{4A9DFCC7-B4B0-48BB-9206-7A30647BAA2C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HolaMundo.Firebase", "HolaMundo.Firebase\HolaMundo.Firebase.csproj", "{CACDCF03-4949-4CF1-B024-159151C513D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolaMundo.FireStoreDatabase", "HolaMundo.FireStoreDatabase\HolaMundo.FireStoreDatabase.csproj", "{FA7D0CBA-3F6E-44C2-860C-C1726A426C2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +63,18 @@ Global
 		{E1EB2120-D09F-4A1F-A49A-35821A8CF813}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1EB2120-D09F-4A1F-A49A-35821A8CF813}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1EB2120-D09F-4A1F-A49A-35821A8CF813}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A9DFCC7-B4B0-48BB-9206-7A30647BAA2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A9DFCC7-B4B0-48BB-9206-7A30647BAA2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A9DFCC7-B4B0-48BB-9206-7A30647BAA2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A9DFCC7-B4B0-48BB-9206-7A30647BAA2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CACDCF03-4949-4CF1-B024-159151C513D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CACDCF03-4949-4CF1-B024-159151C513D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CACDCF03-4949-4CF1-B024-159151C513D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CACDCF03-4949-4CF1-B024-159151C513D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA7D0CBA-3F6E-44C2-860C-C1726A426C2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA7D0CBA-3F6E-44C2-860C-C1726A426C2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA7D0CBA-3F6E-44C2-860C-C1726A426C2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA7D0CBA-3F6E-44C2-860C-C1726A426C2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

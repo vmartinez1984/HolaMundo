@@ -8,8 +8,8 @@ namespace HolaMundo.Serilog.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
+            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+        };
 
         private readonly ILogger<WeatherForecastController> _logger;
 
@@ -18,13 +18,11 @@ namespace HolaMundo.Serilog.Controllers
             _logger = logger;
         }
 
-        [HttpGet(Name = "GetWeatherForecast")]
+        [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
             try
             {
-                _logger.LogInformation("Executing WeatherForecast Get method");
-                throw new Exception("Sample user created exception.", new Exception("Sample inner exception"));
                 return Enumerable.Range(1, 5).Select(index => new WeatherForecast
                 {
                     Date = DateTime.Now.AddDays(index),
@@ -32,6 +30,20 @@ namespace HolaMundo.Serilog.Controllers
                     Summary = Summaries[Random.Shared.Next(Summaries.Length)]
                 })
                .ToArray();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, String.Format("Error/exception in WeatherForecast Get method. Error {0}", ex.Message));
+                throw;
+            }
+        }
+
+        [HttpGet("Error")]
+        public IEnumerable<WeatherForecast> Error()
+        {
+            try
+            {
+                throw new Exception("Sample user created exception.", new Exception("Sample inner exception"));
             }
             catch (Exception ex)
             {
